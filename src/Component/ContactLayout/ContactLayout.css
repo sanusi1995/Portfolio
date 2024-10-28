@@ -1,0 +1,117 @@
+/* #contact-container{
+  margin-top: 15%;
+    
+
+}
+
+.Contact-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90vw;
+   
+}
+
+.Contact-pageHeading{
+    text-align: center;
+}
+
+.FormName, .FormEmail, .Messagebox{
+    font-size: medium;
+    width: 100%;
+    max-width: 40rem;
+    margin: 0.4rem;
+    padding: 0.5rem 1rem;
+    border: blue;
+    color: white;
+    border-radius: 0.5rem;
+    background: rgb(40, 40, 40);
+}
+
+
+.Formbtn{
+    background: white;
+    border-radius: 0.5rem;
+    margin: 2rem;
+    border: none;
+    padding: 0.75rem 3.5rem;
+} */
+
+
+#contact-container {
+    margin-top: 15%;
+}
+
+.Contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90vw; /* Responsive width */
+}
+
+.Contact-pageHeading {
+    text-align: center;
+    font-size: 2rem; /* Base heading size */
+}
+
+.FormName, .FormEmail, .Messagebox {
+    font-size: medium; /* Base font size */
+    width: 100%;
+    max-width: 40rem; /* Maintain a maximum width */
+    margin: 0.4rem;
+    padding: 0.5rem 1rem;
+    border: 2px solid blue; /* Added border style */
+    color: white;
+    border-radius: 0.5rem;
+    background: rgb(40, 40, 40);
+}
+
+.Formbtn {
+    background: white;
+    border-radius: 0.5rem;
+    margin: 2rem;
+    border: none;
+    padding: 0.75rem 3.5rem;
+}
+
+/* Media Queries for Contact Container */
+
+@media screen and (max-width: 840px) {
+    #contact-container {
+        margin-top: 10%; /* Reduce margin for medium screens */
+    }
+    .Contact-pageHeading {
+        font-size: 1.5rem; /* Reduce heading size */
+    }
+    .FormName, .FormEmail, .Messagebox {
+        max-width: 90%; /* Increase width for smaller screens */
+    }
+    .Formbtn {
+        padding: 0.75rem 2.5rem; /* Adjust button padding */
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .Contact-pageHeading {
+        font-size: 1.3rem; /* Further reduce heading size */
+    }
+    .FormName, .FormEmail, .Messagebox {
+        font-size: small; /* Reduce font size for inputs */
+        margin: 0.3rem; /* Adjust margins */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .Contact-pageHeading {
+        font-size: 1.2rem; /* Final heading size for small screens */
+    }
+    .FormName, .FormEmail, .Messagebox {
+        font-size: x-small; /* Further reduce input font size */
+        padding: 0.4rem; /* Adjust padding */
+    }
+    .Formbtn {
+        padding: 0.5rem 2rem; /* Adjust button padding */
+    }
+}

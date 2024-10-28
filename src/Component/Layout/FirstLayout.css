@@ -1,0 +1,321 @@
+/* .layout1{
+    margin: 0 auto;
+    width: 100vw;
+    max-width: 75rem;
+    height: calc(100vh - 4rem);
+    position: relative;
+    overflow: hidden;
+}
+
+.ProfilePics{
+    position: absolute;
+    z-index: -1;
+    top: 7rem;
+    right: 0;
+    object-fit: cover;
+    height: 100vh;
+    padding-right: 5%;
+}
+
+.LayoutContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vm;
+    width: 100vw;
+    padding: 2rem;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.Greeting{
+    font-size:0.5em;
+    font-weight: 200;
+}
+
+.Bio{
+    font-size:1em;
+    font-weight: 500;
+}
+
+.BioName{
+    color: blue;
+}
+
+.LayoutContent p{
+    font-size:0.4em;
+   
+}
+
+.gitIcon{
+    max-width: 20px;
+}
+
+.HireBtn{
+    background-color:white;
+    padding: 0.75rem 1.5rem;
+    margin: 1rem 0;
+    border: none;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+
+.HireBtn:hover{
+    background-color: blue;
+    color: white;
+}
+
+.btnImg{
+    object-fit: cover;
+    margin: 0 0.25rem;
+    height: 1rem;
+}
+
+.mediaIcons{
+    position: relative;
+    width: 200px;
+    height: 100px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -5%;
+    padding-top: 3%;
+    margin-top: 5%;
+}
+
+.link{
+    position: absolute;
+    width: 50px; 
+    height: 50px; 
+    border-radius: 50%;
+    background-color: #f0f0f0; 
+    transition: background-color 0.3s, transform 0.3s; 
+}
+
+.link:hover{
+    background-color:blue; 
+    transform: scale(1.1);
+}
+
+.link.LayerMediaList {
+    font-size: 24px;
+}
+
+.link:nth-child(1) { top: 0; left: 50%; transform: translate(-50%, 0); } 
+.link:nth-child(2) { top: 50%; left: 100%; transform: translate(-100%, -50%); } 
+.link:nth-child(3) { bottom: 0; left: 50%; transform: translate(-50%, 100%); }
+.link:nth-child(4) { top: 50%; left: 0; transform: translate(0, -50%); }
+
+
+@media screen and (max-width:840px) {
+    .ProfilePics{
+        right: -10vw;
+    }
+
+    .LayoutContent{
+        font-size: 10vw;
+    }
+
+    .Greeting{
+        font-size: 4.5vw;
+    }
+    
+}
+
+@media screen and (max-width:480px) {
+    .ProfilePics{
+        right: -20vw;
+    }  
+} */
+
+
+.layout1 {
+    margin: 0 auto;
+    width: 100vw;
+    max-width: 75rem;
+    height: calc(100vh - 4rem);
+    position: relative;
+    overflow: hidden;
+}
+
+.ProfilePics {
+    position: absolute;
+    z-index: -1;
+    top: 7rem;
+    right: 0;
+    object-fit: cover;
+    height: 100vh;
+    padding-right: 5%;
+}
+
+.LayoutContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh; /* Fixed typo from 100vm to 100vh */
+    width: 100vw;
+    padding: 2rem;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.Greeting {
+    font-size: 0.5em;
+    font-weight: 200;
+}
+
+.Bio {
+    font-size: 1em;
+    font-weight: 500;
+}
+
+.BioName {
+    color: blue;
+}
+
+.LayoutContent p {
+    font-size: 0.4em;
+}
+
+.gitIcon {
+    max-width: 20px;
+}
+
+.HireBtn {
+    background-color: white;
+    padding: 0.75rem 1.5rem;
+    margin: 1rem 0;
+    border: none;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+
+.HireBtn:hover {
+    background-color: blue;
+    color: white;
+}
+
+.btnImg {
+    object-fit: cover;
+    margin: 0 0.25rem;
+    height: 1rem;
+}
+
+.mediaIcons {
+    position: relative;
+    width: 200px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -5%;
+    padding-top: 3%;
+    margin-top: 5%;
+}
+
+.link {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #f0f0f0;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.link:hover {
+    background-color: blue;
+    transform: scale(1.1);
+}
+
+.link.LayerMediaList {
+    font-size: 24px;
+}
+
+.link:nth-child(1) {
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+.link:nth-child(2) {
+    top: 50%;
+    left: 100%;
+    transform: translate(-100%, -50%);
+}
+.link:nth-child(3) {
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 100%);
+}
+.link:nth-child(4) {
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 840px) {
+    .ProfilePics {
+        right: -10vw;
+    }
+    .LayoutContent {
+        font-size: 10vw;
+    }
+    .Greeting {
+        font-size: 4.5vw;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .ProfilePics {
+        right: -15vw;
+    }
+    .LayoutContent {
+        padding: 1.5rem;
+        font-size: 8vw;
+    }
+    .Greeting {
+        font-size: 5vw;
+    }
+    .Bio {
+        font-size: 3vw;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .ProfilePics {
+        right: -20vw;
+    }
+    .LayoutContent {
+        font-size: 6vw;
+    }
+    .Greeting {
+        font-size: 6vw;
+    }
+    .Bio {
+        font-size: 4vw;
+    }
+    .mediaIcons {
+        width: 150px; /* Reduce icon area */
+        height: 80px; /* Reduce icon area */
+        margin-left: 0; /* Center icons */
+        padding-top: 5%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .LayoutContent {
+        padding: 1rem;
+        font-size: 5vw; /* Further reduce font size */
+    }
+    .Greeting {
+        font-size: 5vw;
+    }
+    .Bio {
+        font-size: 3vw;
+    }
+    .mediaIcons {
+        width: 120px; /* Further reduce icon area */
+        height: 60px; /* Further reduce icon area */
+    }
+}

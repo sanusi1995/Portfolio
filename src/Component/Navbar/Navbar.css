@@ -1,0 +1,24 @@
+.navbar{
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    width: 100vw;
+    max-width: 75rem;
+    height: 5rem;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:rgb(30, 30, 30);
+}
+
+.desktopMenueList{
+    margin: 1.5rem;
+    cursor: pointer;
+}
+
+.desktopMenueList:hover{
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid blue;
+}

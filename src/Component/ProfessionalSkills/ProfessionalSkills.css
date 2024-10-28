@@ -1,0 +1,151 @@
+/* #ProfSkill-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    font-size: 3rem;
+    position: relative;
+    max-width: 100rem;
+  
+}
+
+.ProfSkill-heading{
+    font-size:1em;
+    font-weight: 500;
+    text-align: center;
+
+}
+
+.Profskill-sub-heading{
+    font-size:0.3em;
+    font-weight: 600;
+    font-family: poppins,sans-serif;
+   
+}
+
+.ProfImg{
+    position: absolute;
+    right: 0;
+    object-fit: cover;
+    height: 70vh;
+    padding-right: 3%;
+}
+
+.Program-lang-inner{
+    padding: 1rem 0rem;
+}
+
+.Program-lang span{
+    font-size:0.4em;
+}
+
+.guageImg1{
+    margin-left:1%;
+}
+
+.StrLine{
+    width: 100%;
+    border: 5px solid blue;
+    border-radius: 5px;
+}
+
+ */
+
+
+ #ProfSkill-container { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    font-size: 3rem;
+    position: relative;
+    max-width: 100rem; 
+    flex-wrap: wrap;
+}
+
+.ProfSkill-heading {
+    font-size: 1em; 
+    font-weight: 500;
+    text-align: center;
+}
+
+.Profskill-sub-heading {
+    font-size: 0.3em; 
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+}
+
+.ProfImg {
+    position: absolute;
+    right: 0;
+    object-fit: cover;
+    height: 70vh; 
+    padding-right: 3%;
+}
+
+.Program-lang-inner {
+    padding: 1rem 0;
+}
+
+.Program-lang span {
+    font-size: 0.4em; 
+}
+
+.guageImg1 {
+    margin-left: 1%;
+}
+
+.StrLine {
+    width: 100%;
+    border: 5px solid blue;
+    border-radius: 5px;
+}
+
+
+
+@media screen and (max-width: 840px) {
+    #ProfSkill-container {
+        flex-direction: column; 
+        align-items: center; 
+        padding: 1.5rem; 
+        font-size: 2.5rem; 
+    }
+    .ProfImg {
+        height: 50vh; 
+        padding-right: 0; 
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #ProfSkill-container {
+        padding: 1rem; 
+        font-size: 2rem; 
+    }
+    .Profskill-sub-heading {
+        font-size: 0.25em; 
+    }
+    .Program-lang span {
+        font-size: 0.35em; 
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #ProfSkill-container {
+        font-size: 1.5rem; 
+    }
+    .ProfImg {
+        height: 40vh;
+    }
+    .Profskill-sub-heading {
+        font-size: 0.2em; 
+    }
+}
+
+@media screen and (max-width: 320px) {
+    #ProfSkill-container {
+        font-size: 1.2rem;
+    }
+    .ProfImg {
+        height: 30vh;
+    }
+}
